@@ -2168,8 +2168,8 @@ a:focus {
     position: relative;
     margin: 10px;
     overflow: hidden;
-    width: 300px; /* Adjust according to your preference */
-    height: 200px; /* Adjust according to your preference */
+    width: 340px; /* Adjust according to your preference */
+    height: 220px; /* Adjust according to your preference */
     transition: transform 0.5s ease;
 }
 
