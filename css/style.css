@@ -64,6 +64,15 @@ a:focus {
     margin-left: 0;
 }
 
+/*************************************/
+/********* div spacing ***************/
+/*************************************/
+
+.div-class {
+    margin: 40px; /* Adjust the value to increase or decrease the gap */
+}
+
+
 
 /**********************************/
 /****** Loader & Back to Top ******/
@@ -2164,12 +2173,14 @@ a:focus {
     flex-wrap: wrap;
 }
 
+
 .image {
     position: relative;
     margin: 10px;
     overflow: hidden;
     width: 340px; /* Adjust according to your preference */
     height: 220px; /* Adjust according to your preference */
+    border-radius: 0px; /* Add border-radius for rounded corners */
     transition: transform 0.5s ease;
 }
 
@@ -2185,16 +2196,18 @@ a:focus {
     left: 0;
     width: 100%;
     height: 30%; /* Adjust this value to leave space for title and description */
-    background-color: rgba(0, 0, 0, 0); /* Set the initial background color to transparent */
+    background-color: rgba(0, 0, 0, 0.5); /* Set the background color */
     color: white;
     padding: 10px;
     overflow: hidden;
-    transition: height 0.5s ease, background-color 0.5s ease; /* Add transition for background-color */
+    border-bottom-left-radius: 5px; /* Add border-radius for rounded corners */
+    border-bottom-right-radius: 5px; /* Add border-radius for rounded corners */
+    transition: background-color 0.5s ease; /* Add transition for background-color */
 }
 
 .overlay-content {
-    opacity: 0;
-    transform: translateY(100%);
+    opacity: 1;
+    transform: translateY(0);
     transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
@@ -2208,19 +2221,10 @@ a:focus {
 }
 
 .description {
+    color: orange;
     font-style: italic; /* Make the description italic */
 }
 
 .image:hover {
     transform: scale(1.1);
-}
-
-.image:hover .overlay {
-    height: 30%; /* Adjust this value to reduce the height of the overlay background */
-    background-color: rgba(0, 0, 0, 0.5); /* Set the background color on hover */
-}
-
-.image:hover .overlay-content {
-    opacity: 1;
-    transform: translateY(0);
 }
