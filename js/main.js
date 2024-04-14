@@ -56,8 +56,7 @@
     // Main carousel
     $(".carousel .owl-carousel").owlCarousel({
         autoplay: true,
-        animateOut: 'fadeOut',
-        animateIn: 'fadeIn',
+        slideTransition: 'linear',
         items: 1,
         smartSpeed: 300,
         dots: false,
