@@ -26,14 +26,15 @@
     
     
     // Sticky Navbar
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 0) {
-            $('.navbar').addClass('nav-sticky');
+    window.addEventListener('scroll', function() {
+        const navbar = document.querySelector('.navbar');
+        if (window.scrollY > 100) {
+            navbar.classList.add('sticky');
         } else {
-            $('.navbar').removeClass('nav-sticky');
+            navbar.classList.remove('sticky');
         }
     });
-    
+        
     
     // Dropdown on mouse hover
     $(document).ready(function () {
